@@ -201,15 +201,15 @@ Mock Tokens (MockDAI, MockUSDC, etc.): These are simple ERC20 token contracts us
 Deployment: The ZFactory contract is deployed, which in turn deploys an initial zPool and Minter. The Minter is configured to recognize the underlying and wrapped token pair.
 
 ## Deposit Process:
-a. A user calls the deposit function on the zPool contract, sending a _commitment and the required _amount of a specific token.
-b. The zPool receives the token from the user.
-c. The zPool calls minter.mintZToken, which takes the user's underlying token and mints the wrapped ZToken to their address.
-d. The zPool inserts the _commitment into its Merkle tree.
+# a. A user calls the deposit function on the zPool contract, sending a _commitment and the required _amount of a specific token.
+# b. The zPool receives the token from the user.
+# c. The zPool calls minter.mintZToken, which takes the user's underlying token and mints the wrapped ZToken to their address.
+# d. The zPool inserts the _commitment into its Merkle tree.
 
 ## Withdrawal Process:
-a. A user generates a zero-knowledge proof off-chain, proving they have a valid commitment.
-b. The user calls the withdraw function on the zPool, providing the proof, the Merkle tree root, their unique nullifier hash, and their desired recipient address.
-c. The zPool validates the zero-knowledge proof using the verifier contract.
-d. If the proof is valid, the zPool calls minter.burnZToken.
-e. The Minter burns the wrapped ZToken from the user's address.
-f. The Minter (or zPool - though the zPool's transfer function is commented out) transfers the underlying token to the recipient's address.
+# a. A user generates a zero-knowledge proof off-chain, proving they have a valid commitment.
+# b. The user calls the withdraw function on the zPool, providing the proof, the Merkle tree root, their unique nullifier hash, and their desired recipient address.
+# c. The zPool validates the zero-knowledge proof using the verifier contract.
+# d. If the proof is valid, the zPool calls minter.burnZToken.
+# e. The Minter burns the wrapped ZToken from the user's address.
+# f. The Minter (or zPool - though the zPool's transfer function is commented out) transfers the underlying token to the recipient's address.
