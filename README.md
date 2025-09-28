@@ -1,4 +1,4 @@
-## zKEtherPool 
+## zKETHer 
 ## Overview
 
 zkEther is a privacy-preserving deposit & withdrawal pool built using zero-knowledge proofs (ZKPs) and incremental Merkle trees.
