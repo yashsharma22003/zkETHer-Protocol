@@ -7,3 +7,6 @@
 [submodule "zk_mopro"]
 	path = zk_mopro
 	url = https://github.com/sanjay-sol/zk_mopro
+[submodule "zkETHer-web-app"]
+	path = zkETHer-web-app
+	url = https://github.com/saksham-kumar01/zkETHer-web-app
