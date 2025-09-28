@@ -1,0 +1,9 @@
+[submodule "zkETHer-contracts-core"]
+	path = zkETHer-contracts-core
+	url = https://github.com/yashsharma22003/zkETHer-contracts-core.git
+[submodule "zkETHer-app"]
+	path = zkETHer-app
+	url = https://github.com/yashsharma22003/zkETHer-app.git
+[submodule "zk_mopro"]
+	path = zk_mopro
+	url = https://github.com/sanjay-sol/zk_mopro
